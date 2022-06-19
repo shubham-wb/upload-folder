@@ -1,0 +1,183 @@
+/* custom font */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+body {
+  font-family: "Poppins";
+}
+
+#heading {
+  margin: 10px 0px;
+  height: 40px;
+}
+
+input {
+  display: none;
+}
+
+::-webkit-file-upload-button {
+  background-color: rgba(0, 0, 255, 0.614);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: solid 1px transparent;
+}
+
+.no-f {
+  margin-top: 50px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+.wrapper-btn {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-btn h4 {
+  height: 30px;
+  margin: 0px;
+  margin: 10px 0px;
+}
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #bfc0c0;
+  margin: 10px 0px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h5 {
+  color: #bfc0c0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#btn {
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#btn h5 {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #bfc0c0;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#btn:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#btn:hover h5 {
+  color: #2d3142;
+}
+
+table {
+  border: solid 2px black;
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  width: 80%;
+  border: solid 2px;
+}
+
+table thead tr {
+  height: 60px;
+  color: white;
+  background-color: #36304a !important;
+}
+
+thead tr th {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+#th-1,
+#td-1 {
+  width: 70%;
+  padding: 10px;
+  border: solid 2px #14111b;
+  text-align: left;
+}
+
+#th-2,
+#td-2 {
+  width: 30%;
+  padding: 10px;
+  border: solid 2px #14111b;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5f5f57c;
+}
+
+tr:nth-child(even) {
+  background-color: #80808060;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
